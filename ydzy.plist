@@ -19,7 +19,7 @@
 					<key>needs-shine</key>
 					<false/>
 					<key>url</key>
-					<string>https://www.dropbox.com/s/rmuqhwko16vd2za/large.png</string>
+					<string>https://raw.githubusercontent.com/HAOYEE/Dev_Folder/master/large.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -27,7 +27,7 @@
 					<key>needs-shine</key>
 					<false/>
 					<key>url</key>
-					<string>https://www.dropbox.com/s/17qbn2nu5t276ul/small.png</string>
+					<string>https://raw.githubusercontent.com/HAOYEE/Dev_Folder/master/small.png</string>
 				</dict>
 			</array>
 			<key>metadata</key>
