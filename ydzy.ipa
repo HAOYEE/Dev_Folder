@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>http://27.17.30.245:2800/download/ydzy.ipa</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>needs-shine</key>
+					<false/>
+					<key>url</key>
+					<string>https://www.dropbox.com/s/rmuqhwko16vd2za/large.png</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>needs-shine</key>
+					<false/>
+					<key>url</key>
+					<string>https://www.dropbox.com/s/17qbn2nu5t276ul/small.png</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>InHouse.com.apex.CoWork</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>subtitle</key>
+				<string>by 郝鎏洋</string>
+				<key>title</key>
+				<string>移动展业 for iOS</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
