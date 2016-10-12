@@ -1,0 +1,310 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content="HTML Tidy, see www.w3.org" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>合同</title>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<style type="text/css">
+
+body, ul, ol, dl, dd, p, h1, h2, h3, h4, h5, h6, input, textarea, select { margin: 0; padding: 0; font-family:"微软雅黑";}
+
+input, select, textarea { outline: none; background-color: transparent; border:none; }
+
+textarea { resize: none; }
+
+.w645{ width:100%;padding:10px;}
+
+.auto{ margin-left:auto; margin-right:auto;}
+
+.yhei{ font-family:"\5FAE\8F6F\96C5\9ED1";}
+
+.f18{ font-size:18px;}
+
+.f14{ font-size:14px;}
+
+.f12{ font-size:12px;}
+
+.col{ color:#111111;}
+
+.tc{ text-align:center;}
+
+.tr{ text-align:right;}
+
+.mb40{ margin-bottom:40px;}
+
+.mb70{ margin-bottom:20px;}
+
+.mb30{ margin-bottom:20px;}
+
+.cc p{ line-height:30px;font-size:12px;}
+
+table{ border-spacing:0;border-collapse: collapse;}
+
+.cc table{ font-size:12px; text-align:center;}
+
+.cc .table1{ font-size:12px; text-align:left; position:relative;}
+
+.y_z,
+.j_z{
+    display: block;
+}
+
+.j_z{ 
+
+  /*position:absolute; left:5%; top:50px;*/
+}
+
+.y_z{ 
+
+  /*position:absolute; left:54%; top:50px;*/
+}
+
+.cc .table1 .tr1 td{padding-left:30px;}
+
+.tr1{ height:35px; line-height:35px;}
+
+.tr2{ height:95px; line-height:35px;}
+
+.cc table .tr1 td{ line-height:35px;}
+
+.cc textarea{ border:1px solid #eee; width:748px; height:122px; line-height:28px;font-family:"\5FAE\8F6F\96C5\9ED1";color:#111111; 
+
+padding:10px; font-size:12px;}
+
+.text1{ border-bottom:1px solid #000; padding:0 15px; display:inline-block;}
+
+.s_t{ text-align:right;}
+.wrap{
+  width: 100%;
+  min-width: 665px;
+  margin:0 auto;
+}
+
+/*.text2{ border-bottom:1px solid #000; width:250px;}
+
+.text3{ border-bottom:1px solid #000; display:inline-block; padding:0 10px;}*/
+
+</style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="w645 auto col yhei cc">
+        <div class="f18 tc mb40">
+          确认单
+        </div>
+
+        <table width="100%" border="0">
+          <tbody>
+            <tr>
+              <td width="80%" align="right">确认单号：</td>
+
+              <td width="20%" align="left"><span id="orderNo"></span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><span class="text1" id="yName">XXX公司</span>：</p>
+        <!-- 应标方-->
+
+        <p style="text-indent:24px;">根据贵我双方签订的《煤炭购销合同》（合同编号：<span class="text1" id="templateCode"></span>），经双方协商同意，在交付前对本批次煤炭订单约定的以下条款予以确认：</p>
+
+        <p class="mb30">1.交货品名：<span class="text1" id="className">喷吹煤</span></p>
+
+        <p class="mb30">2.交货地点及方式：<span class="text1" id="whName">曹妃甸港</span><span class="text1" id="sendRemark">站场地交货</span></p>
+
+        <p class="mb30">3.交货时间：<span class="text1" id="publishDate">2016年10月12日</span>-<span class="text1" id="validEndDate">2016年10月20日</span> （交货时间点以港口的数量检测单据时间为准）</p>
+
+        <p class="mb30">4.运输方式：<span class="text1" id="transferType">汽运</span></p>
+
+        <p>5.交货数量及对应的基本价格：</p>
+
+        <p class="mb30">&nbsp;&nbsp;基本价格为：<span class="text1" id="unitPrice"></span>元/吨</p>
+
+        <p class="mb30">6.数量检查标准：以<span class="text1">京唐港开滦码头铁路轨道衡</span>检测数据为准。</p>
+
+        <p class="mb30">7.质量规格要求</p>
+
+        <table width="100%" border="1" class="mb30" id="coalTarget">
+          <tbody>
+            <tr class="tr1">
+              <td width="20%">序号</td>
+
+              <td width="40%">指标</td>
+
+              <td width="40%">接收范围</td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="tr1">
+              <td>1</td>
+
+              <td class="target"><span id="catCustomName0">发热量</span></td>
+
+              <td class="receiveRange"><span id="catCustomValue0">12</span></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="tr1">
+              <td>2</td>
+
+              <td class="target"><span id="catCustomName1">全水</span></td>
+
+              <td class="receiveRange"><span id="catCustomValue1">≤8%</span></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="tr1">
+              <td>3</td>
+
+              <td class="target"><span id="catCustomName2">全硫</span></td>
+
+              <td class="receiveRange"><span id="catCustomValue2">≤0.65%</span></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="tr1">
+              <td>4</td>
+
+              <td class="target"><span id="catCustomName3">灰分</span></td>
+
+              <td class="receiveRange"><span id="catCustomValue3">10%-11%</span></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="tr1">
+              <td>5</td>
+
+              <td class="target"><span id="catCustomName4">挥发分</span></td>
+
+              <td class="receiveRange"><span id="catCustomValue4">9%-11%</span></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="tr1">
+              <td>6</td>
+
+              <td class="target"><span id="catCustomName5">焦渣特性</span></td>
+
+              <td class="receiveRange"><span id="catCustomValue5">12</span></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="tr1">
+              <td>7</td>
+
+              <td class="target"><span id="catCustomName6">固定碳</span></td>
+
+              <td class="receiveRange"><span id="catCustomValue6">≥80%</span></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="tr1">
+              <td>8</td>
+
+              <td class="target"><span id="catCustomName7">灰熔点</span></td>
+
+              <td class="receiveRange"><span id="catCustomValue7">22</span></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="tr1">
+              <td>9</td>
+
+              <td class="target"><span id="catCustomName8">粒度</span></td>
+
+              <td class="receiveRange"><span id="catCustomValue8">1</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>8.质量检查：</p>
+
+        <p class="mb30">双方同意由甲方委托第三方检验机构北京华夏力鸿商品检验有限公司进行检验，并以检验结果作为验收、结算依据。检验费用由甲方承担。</p>
+
+        <p>9.质量调整价：</p>
+
+        <p>9.1收到基低位发热量调整价（计算过程保留小数点后三位，计算结果保留小数点后两位，四舍五入）：公式说明：Q1=实际收到基低位发热量，Q2= 合同收到基低位发热量，当Q1≥（Q2-150）时，按公式（1）计算；当（Q2-150）＞Q1≥（Q2-300）时，按公式（2）计算；当Q1＜（Q2-300）时，甲方有 权拒收。</p>
+
+        <p>公式（1）发热量调整价＝交货当周场地交货基本价×（Q1/Q2-1）</p>
+
+        <p>公式（2）发热量调整价＝交货当周场地交货基本价×{ [ 2×（Q1-Q2+150）-150 ]/Q2 }</p>
+
+        <p>9.2收到基全硫调整价：全硫（St,ar）大于0.8%小于1%时，每比0.8%超过0.01％结算单价扣0.2元／吨；全硫（St,ar）大于1%时，每比1%超过0.01％结 算单价扣0.4元／吨。</p>
+
+        <p>9.3结算单价=基本价格+质量调整价+其他调整价</p>
+
+        <p>9.4结算数量=交货数量－其它应扣减的数量</p>
+
+        <p>其它应扣减的数量：水分超标扣减数量：（1）全水分（M t）以12%为基准水分，实际水分每比12%超1%扣计量的1%；当实际水分＞13%时，每比13%超1%扣计量的2%。不足1%部分按比例扣罚。（2）内水（Mad） 以3%为基准水分，实际内水每比3%超0.1%扣计量的0.1%，当实际内水＞3.5%时，甲方有权拒收。</p>
+
+        <p class="mb30">9.5其它扣减项：若乙方交付的煤炭掺配煤泥，原则上该批煤炭扣罚30元/吨；如出现入库煤炭煤矸石含量较高（超过2%），甲方有权按含矸石率扣除 乙方结算吨位；如出现夹杂木块、铁块、石块等非煤炭物质，甲方有权拒绝接收该批煤炭，由此造成的所有损失由乙方承担。如果甲方接收了该批煤 炭，则乙方同意将木块、铁块、石块等非煤炭物质重量在该批煤炭的结算数量中扣除。</p>
+
+        <p class="mb30">10.甲乙双方同意以本确认单确定的内容为本批次煤炭的履行依据，构成《煤 炭购销合同》不可分割的一部分，与《煤炭购销合同》正文具有同等效力，当本确认单约定的内容与《煤炭购销合同》不一致时，以本确认单的约定 为准。</p>
+
+        <p class="mb30">11.最终结算数量和结算单价、总价以双方确认的《结算单》为准。</p>
+
+        <table width="100%" border="0" class="mb30 table1">
+          <tbody>
+            <tr class="tr1">
+              <td width="50%">甲方：<span id="zName">吉吉有限责任公司</span></td>
+
+              <td width="50%">乙方：<span id="yName"></span></td>
+            </tr>
+
+            <tr class="tr1">
+              <td>签字并盖章：<span id="buyerSigId" class="j_z"><img width="240" src="../../dzWebApp/image/app_img5.png" alt="" />[[[甲方签章]]]</span></td>
+
+              <td>签字并盖章：<span id="sellerSigId" class="y_z"><img width="240" src="../../dzWebApp/image/app_img5.png" alt="" />[[[乙方签章]]]</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="s_t">签订日期： 年 月 日</p>
+      </div>
+    </div>
+
+    <script>
+    $(function(){
+      var browser={
+        versions:function(){
+          var u = navigator.userAgent, app = navigator.appVersion;
+          return {         //移动终端浏览器版本信息
+              webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+              mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+              ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+              android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+              iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+              iPad: u.indexOf('iPad') > -1, //是否iPad
+              webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+              weixin:u.indexOf('MicroMessenger')>-1//判断是否为微信打开
+          };
+        }()
+      }
+
+      if(browser.versions.mobile){
+        var biVal = (window. screen.width/document.body.clientWidth)-0.01;
+        $('html').css({
+          'transform':'scale('+ biVal +')',
+          'transform-origin':'top'
+        });
+      }
+    })
+    </script>
+
+  </body>
+</html>
